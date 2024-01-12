@@ -20,14 +20,12 @@ jQuery(document).ready(function ($) {
 
                 // Inicialização do Glider.js
                 window._glider = new Glider(document.querySelector('.glider-instagram'), {
-                    slidesToShow: 5,
+                    slidesToShow: 1.5,
                     slidesToScroll: 1,
+                    itemWidth: 223,
+                    arrows:false,
                     draggable: true,
                     dots: false,
-                    arrows: {
-                        prev: '.glider-prev',
-                        next: '.glider-next'
-                    },
                     responsive: [
                         {
                             breakpoint: 1024,
@@ -35,7 +33,11 @@ jQuery(document).ready(function ($) {
                                 slidesToShow: 'auto',
                                 slidesToScroll: 'auto',
                                 draggable: true,
-                                itemWidth: 231
+                                itemWidth: 231,
+                                arrows: {
+                                    prev: '.glider-prev',
+                                    next: '.glider-next'
+                                }
                             },
                         },
                         {
