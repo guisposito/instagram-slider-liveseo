@@ -151,7 +151,7 @@ function instagram_feed_shortcode($atts) {
 
     ob_start();
     ?>
-    <div class="glider-contain">
+    <div class="glider-contain-instagram">
         <div class="instagram-content">
             <p class="instagram-title"><?php echo esc_html($atts['title']); ?></p>
             <?php
